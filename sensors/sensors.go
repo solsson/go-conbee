@@ -37,6 +37,8 @@ type Sensor struct {
 
 type Config struct {
 	On            bool   `json:"on"`
+	Reachable     bool   `json:"reachable"`
+	Battery       int16  `json:"battery"`
 	Long          string `json:"long,omitempty"`
 	Lat           string `json:"lat,omitempty"`
 	SunriseOffset int16  `json:"sunriseoffset,omitempty"`
@@ -49,6 +51,8 @@ type State struct {
 	ButtonEvent int16  `json:"buttonevent,omitempty"`
 	Status      int16  `json:"status,omitempty"`
 	Temperature int16  `json:"temperature,omitempty"`
+	Humidity    int16  `json:"humidity,omitempty"`
+	Pressure    int16  `json:"pressure,omitempty"`
 	LightLevel  int16  `json:"lightlevel,omitempty"`
 	Dark        bool   `json:"dark,omitempty"`
 	Daylight    bool   `json:"daylight,omitempty"`
